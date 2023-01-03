@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/slick.css"> 
+    
+    <title>Platinental</title>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <div class="header_contacts">
+                <a href="" class="header_logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="211" height="45" viewBox="0 0 211 45" fill="none">
+                        <path d="M23.6847 23.6844H23.6841H21.3159V21.3159V21.3156H23.6841H23.6847V23.6841V23.6844ZM28.421 28.421H26.053V26.0527H28.421V28.421ZM42.6317 26.0527V29.605C42.6317 32.4993 40.5431 34.9109 37.7946 35.4221C37.2358 31.8412 34.3847 29.0208 30.7895 28.5067V26.0527H42.6317ZM30.9491 30.9491C33.1353 31.4592 34.8564 33.1803 35.3665 35.3663C33.1806 34.8564 31.4594 33.135 30.9491 30.9491ZM29.6052 42.6312V42.6315H26.053V30.7895H28.507C29.021 34.3847 31.8412 37.2355 35.4224 37.7943C34.9112 40.5428 32.4993 42.6312 29.6052 42.6312ZM18.9473 28.4212H16.579V26.0527H18.9473V28.4212ZM18.9473 42.6315H15.3948C12.5005 42.6315 10.0888 40.5428 9.57764 37.7946C13.1588 37.2358 15.979 34.3849 16.4936 30.7895H18.9473V42.6315ZM14.0509 30.9493C13.5406 33.1356 11.8192 34.8567 9.63346 35.3668C10.1436 33.1806 11.865 31.4594 14.0509 30.9493ZM2.36855 29.6052L2.36855 26.0527H14.2105V28.507C10.6153 29.021 7.76392 31.8415 7.20539 35.4224C4.45743 34.9112 2.36855 32.4995 2.36855 29.6052ZM16.579 16.5793H18.9473V18.9476H16.579V16.5793ZM2.36855 18.9473L2.36855 15.395C2.36855 12.5008 4.45743 10.0893 7.20539 9.57817C7.76419 13.159 10.6153 15.9792 14.2105 16.4936V18.9473H2.36855ZM14.0509 14.0512C11.865 13.5408 10.1436 11.8197 9.63346 9.63373C11.8192 10.1438 13.5406 11.865 14.0509 14.0512ZM15.3948 2.36881V2.36855H18.9473V14.2107H16.4936C15.979 10.6153 13.159 7.76471 9.57764 7.20565C10.0888 4.45743 12.5005 2.36881 15.3948 2.36881ZM26.053 16.579H28.421V18.9476H26.053V16.579ZM26.053 2.36855L29.6052 2.36855C32.4993 2.36855 34.9112 4.45743 35.4224 7.20539C31.8412 7.76419 29.021 10.6151 28.507 14.2105H26.053V2.36855ZM30.9491 14.0509C31.4594 11.865 33.1806 10.1436 35.3665 9.63346C34.8564 11.8192 33.1353 13.5406 30.9491 14.0509ZM42.6317 15.3948L42.6317 18.9473H30.7895V16.4936C34.3847 15.979 37.2358 13.159 37.7946 9.57764C40.5431 10.0888 42.6317 12.5005 42.6317 15.3948ZM26.053 21.3156L44.9997 21.3156L45.0003 15.3948C45.0003 11.1926 41.8726 7.72318 37.819 7.18105C37.2768 3.12764 33.8074 0 29.6055 0L23.6847 0.000530243L23.6841 18.9473H21.3159L21.3159 0.000530243L15.3948 0V0.000267029C11.1927 0.000267029 7.72344 3.1279 7.18131 7.18131C3.12764 7.72344 0 11.1926 0 15.3948L0.000529167 21.3156L18.9473 21.3156V23.6844L0.000529167 23.6844L0 29.6052C0 33.8076 3.12764 37.2768 7.18131 37.819C7.72344 41.8724 11.1927 45 15.3948 45L21.3159 44.9995L21.3159 26.0527H23.6841L23.6847 44.9995L29.6055 45V44.9997C33.8074 44.9997 37.2768 41.8721 37.819 37.8187C41.8726 37.2766 45.0003 33.8076 45.0003 29.6052L44.9997 23.6844L26.053 23.6841V21.3156Z" fill="#1D1A15"/>
+                        <path d="M117.183 32.189H119.734V12.7988H117.183V32.189Z" fill="#1D1A15"/>
+                        <path d="M127.996 29.7273C125.645 29.7273 123.732 27.8142 123.732 25.4632C123.732 23.1118 125.645 21.1987 127.996 21.1987C130.348 21.1987 132.26 23.1118 132.26 25.4632C132.26 27.8142 130.348 29.7273 127.996 29.7273ZM132.261 18.5746V20.0554C131.087 19.1291 129.607 18.5746 127.996 18.5746C124.192 18.5746 121.108 21.6588 121.108 25.4632C121.108 29.2676 124.192 32.3518 127.996 32.3518C129.607 32.3518 131.087 31.7973 132.261 30.871V32.3518H134.885V18.5746H132.261Z" fill="#1D1A15"/>
+                        <path d="M143.716 32.189H146.523V18.6669H143.716V32.189Z" fill="#1D1A15"/>
+                        <path d="M143.716 17.3911H146.523V14.5846H143.716V17.3911Z" fill="#1D1A15"/>
+                        <path d="M142.794 18.4042H140.804V14.4925H138.151V18.4042H136.161V21.0121H138.151V32.0967H140.804V21.0121H142.794V18.4042Z" fill="#1D1A15"/>
+                        <path d="M208.01 32.189H210.561V12.7988H208.01V32.189Z" fill="#1D1A15"/>
+                        <path d="M199.306 29.7273C196.999 29.7273 195.121 27.8142 195.121 25.4632C195.121 23.1118 196.999 21.1987 199.306 21.1987C201.614 21.1987 203.491 23.1118 203.491 25.4632C203.491 27.8142 201.614 29.7273 199.306 29.7273ZM203.491 18.5746V20.0554C202.34 19.1291 200.887 18.5746 199.306 18.5746C195.572 18.5746 192.545 21.6588 192.545 25.4632C192.545 29.2676 195.572 32.3518 199.306 32.3518C200.887 32.3518 202.34 31.7973 203.491 30.871V32.3518H206.067V18.5746H203.491Z" fill="#1D1A15"/>
+                        <path d="M192.545 18.4042H190.555V14.4925H187.902V18.4042H185.912V21.0121H187.902V32.0967H190.555V21.0121H192.545V18.4042Z" fill="#1D1A15"/>
+                        <path d="M158.612 23.7256C158.612 20.8807 156.328 18.5746 153.509 18.5746C152.58 18.5746 151.709 18.8267 150.958 19.2656V18.5746H148.407V32.0967H150.958V23.7251C150.959 22.3054 152.103 21.1501 153.509 21.1501C154.916 21.1501 156.061 22.3054 156.061 23.7256H156.061V32.0967H158.612V23.726L158.612 23.7256H158.612Z" fill="#1D1A15"/>
+                        <path d="M185.146 23.7256C185.146 20.8807 182.862 18.5746 180.044 18.5746C179.114 18.5746 178.243 18.8267 177.492 19.2656V18.5746H174.941V32.0967H177.492V23.7251C177.493 22.3054 178.637 21.1501 180.044 21.1501C181.451 21.1501 182.595 22.3054 182.595 23.7256V32.0967H185.146V23.726L185.146 23.7256H185.146Z" fill="#1D1A15"/>
+                        <path d="M87.1493 24.0477C87.6936 22.3685 89.2714 21.1501 91.1295 21.1501C92.9881 21.1501 94.565 22.3685 95.1097 24.0477H87.1493ZM97.7665 26.6232C97.8469 26.2061 97.8905 25.7763 97.8905 25.3356C97.8905 21.6017 94.8635 18.5746 91.1295 18.5746C87.3955 18.5746 84.3685 21.6017 84.3685 25.3356C84.3685 29.0696 87.3955 32.0967 91.1295 32.0967C93.9512 32.0967 96.3682 30.3671 97.3813 27.9111H94.4219C93.6546 28.8888 92.4656 29.5207 91.1295 29.5207C89.2714 29.5207 87.6936 28.3023 87.1493 26.6232H97.7665Z" fill="#1D1A15"/>
+                        <path d="M162.924 24.0477C163.468 22.3685 165.046 21.1501 166.904 21.1501C168.763 21.1501 170.34 22.3685 170.884 24.0477H162.924ZM173.541 26.6232C173.622 26.2061 173.665 25.7763 173.665 25.3356C173.665 21.6017 170.638 18.5746 166.904 18.5746C163.17 18.5746 160.143 21.6017 160.143 25.3356C160.143 29.0696 163.17 32.0967 166.904 32.0967C169.726 32.0967 172.143 30.3671 173.156 27.9111H170.196C169.429 28.8888 168.24 29.5207 166.904 29.5207C165.046 29.5207 163.468 28.3023 162.924 26.6232H173.541Z" fill="#1D1A15"/>
+                        <path d="M83.0928 23.694C83.0928 20.8384 80.7604 18.5236 77.8825 18.5236C76.9336 18.5236 76.044 18.7767 75.2776 19.2172V12.7065L58.3448 12.7065V15.2922H64.8574V32.0967H67.4623V15.2922H72.6722V32.0967H75.2776V23.6935C75.2776 22.2684 76.4465 21.1088 77.8825 21.1088C79.3189 21.1088 80.4874 22.2684 80.4874 23.694V32.0967H83.0928V23.6944L83.0919 23.694H83.0928Z" fill="#1D1A15"/>
+                        <path d="M109.159 23.694H106.877V15.2922H109.163C111.498 15.2945 113.397 17.1778 113.397 19.4931C113.397 21.8092 111.496 23.694 109.159 23.694ZM109.159 12.7065H104.269V32.0967H106.877V26.2796H109.159C112.94 26.2796 116.005 23.2411 116.005 19.4931C116.005 15.745 112.94 12.7065 109.159 12.7065Z" fill="#1D1A15"/>
+                    </svg>
+                </a>
+                <a href="tel:+74959892116" class="header_phone">+7 495 989-21-16</a>
+                <div class="header_social_icon">
+                    <a href="#" class="header_social_icon_link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                            <path d="M23.5317 29.979L18.6078 29.8922C17.0136 29.862 15.4154 29.9224 13.8524 29.6091C11.4748 29.1409 11.3063 26.8456 11.1301 24.9203C10.8872 22.2135 10.9812 19.4576 11.4395 16.7735C11.6983 15.2674 12.7165 14.3686 14.2911 14.2709C19.6067 13.9159 24.9576 13.958 30.2614 14.1236C30.8216 14.1388 31.3856 14.2217 31.9379 14.3162C34.6643 14.7768 34.7308 17.3778 34.9076 19.5675C35.0838 21.7797 35.0094 24.0033 34.6725 26.2005C34.4022 28.0196 33.8851 29.5452 31.7028 29.6925C28.9686 29.8851 26.2971 30.0401 23.5552 29.9907C23.5553 29.979 23.5395 29.979 23.5317 29.979ZM20.6369 25.3734C22.6974 24.2332 24.7186 23.112 26.7673 21.9795C24.703 20.8393 22.6857 19.7181 20.6369 18.5856V25.3734Z" stroke="#1D1A15" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="0.5" y="0.5" width="44" height="44" stroke="#1D1A15"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="header_social_icon_link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                            <path d="M13 28V17C13 14.7909 14.7909 13 17 13H28C30.2091 13 32 14.7909 32 17V28C32 30.2091 30.2091 32 28 32H17C14.7909 32 13 30.2091 13 28Z" stroke="#1D1A15" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M28.5 16C29.0523 16 29.5 16.4477 29.5 17C29.5 17.5523 29.0523 18 28.5 18C27.9477 18 27.5 17.5523 27.5 17C27.5 16.4477 27.9477 16 28.5 16Z" stroke="#1D1A15" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 22.5C18 24.9853 20.0147 27 22.5 27C24.9853 27 27 24.9853 27 22.5C27 20.0147 24.9853 18 22.5 18C20.0147 18 18 20.0147 18 22.5Z" stroke="#1D1A15" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="0.5" y="0.5" width="44" height="44" stroke="#1D1A15"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="header_social_icon_link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                            <rect x="0.5" y="0.5" width="44" height="44" stroke="#1D1A15"/>
+                            <path d="M18.7765 17.1391L19.2265 16.5174C19.6826 15.8873 20.4907 15.6197 21.2327 15.8531C21.298 15.8737 21.3461 15.9293 21.3569 15.9969L21.7687 18.5671C21.811 18.831 21.6796 19.0925 21.4425 19.2161C20.9041 19.4968 20.6475 20.1257 20.8359 20.703L21.3085 22.151C21.4041 22.4438 21.5521 22.7168 21.7453 22.9567L22.3987 23.768C22.7787 24.2398 23.4389 24.3779 23.9761 24.0978C24.2187 23.9713 24.5149 24.0142 24.7116 24.2043L26.5757 26.0062C26.6249 26.0538 26.643 26.1251 26.6225 26.1904C26.389 26.9324 25.707 27.4418 24.9293 27.455L24.1349 27.4684C23.3328 27.482 22.5606 27.1639 22.001 26.5891L21.3119 25.8813C19.9554 24.4882 19.017 22.7425 18.6034 20.8426L18.2967 19.434C18.1229 18.6356 18.2974 17.801 18.7765 17.1391Z" stroke="#1D1A15" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.9383 27.1698L14.4082 27.3406C14.4599 27.1984 14.4444 27.0404 14.366 26.9109L13.9383 27.1698ZM12 32.5L11.5301 32.3291C11.4637 32.5117 11.5091 32.7162 11.6464 32.8536C11.7838 32.9909 11.9883 33.0363 12.1709 32.9699L12 32.5ZM17.3302 30.5617L17.5891 30.134C17.4596 30.0556 17.3016 30.0401 17.1594 30.0918L17.3302 30.5617ZM32 22C32 27.2467 27.7467 31.5 22.5 31.5V32.5C28.299 32.5 33 27.799 33 22H32ZM22.5 12.5C27.7467 12.5 32 16.7533 32 22H33C33 16.201 28.299 11.5 22.5 11.5V12.5ZM13 22C13 16.7533 17.2533 12.5 22.5 12.5V11.5C16.701 11.5 12 16.201 12 22H13ZM14.366 26.9109C13.4991 25.4782 13 23.7982 13 22H12C12 23.9857 12.5517 25.8442 13.5105 27.4286L14.366 26.9109ZM12.4699 32.6709L14.4082 27.3406L13.4684 26.9989L11.5301 32.3291L12.4699 32.6709ZM17.1594 30.0918L11.8291 32.0301L12.1709 32.9699L17.5011 31.0316L17.1594 30.0918ZM22.5 31.5C20.7018 31.5 19.0218 31.0009 17.5891 30.134L17.0714 30.9895C18.6558 31.9483 20.5143 32.5 22.5 32.5V31.5Z" fill="#1D1A15"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="button_burger">
+                    <button id="feed_btn" class="header_button" onclick="ff();">записаться на приём</button>
+                    <div class="menu-burger__header">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="header_navigation">
+                <a href="" class="header_link">о нас</a>
+                <a href="./pages/service.html" class="header_link">услуги и цены</a>
+                <a href="" class="header_link">store</a>
+                <a href="" class="header_link">Новости Анти-age</a>
+                <a href="./pages/doctor.html" class="header_link">врачи</a>
+                <a href="" class="header_link">Контакты</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="chirurgery_wrp slave">
+            <div class="chirurgery_wrapper">
+                <div class="chirurgery">
+                    <h1 class="chirurgery_tite">Хирургия</h1>
+                    <form class="chirurgery_form" action="./pages/service.html">
+                        <button class="index_btn">подробнее</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="cosmetology_wrp slave">
+            <div class="cosmetology_wrapper">
+                <h1 class="cosmetology_title">Косметология</h1>
+                <form action="./pages/service.html" class="cosmetology_form">
+                    <button class="index_btn">подробнее</button>
+                </form>
+            </div>
+        </section>
+        <section class="about_wrp">
+            <div class="about_wrp_1">
+                <div class="about_wrp_2">
+                    <div class="about_wrp_3">
+                        <div class="about_txt_wrp">
+                            <h1 class="about_txt_title">врачи</h1>
+                            <p class="about_txt_text">Клиника The Platinental собрала самых востребованных специалистов в своей области. Узнайте подробнее о нашей звездной команде, свяжитесь с любым специалистом напрямую, или запишитесь к нам на прием.
+                                График работы врачей - по факту записи пациентов на прием.</p>
+                            <form action="./pages/doctor.html">
+                                <button class="index_btn">подробнее</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="about_wrapper">
+                <div class="about_slider_item_1">
+                    <div class="about_cart_name_1">
+                        <h1 class="cart_name_1">АННА СМИРНОВА</h1>
+                        <h2 class="cart_desc">Дерматолог, косметолог</h2>
+                        <button id="feed_btn" class="cart_btn" onclick="ff();">записаться на приём</button>
+                    </div>
+                </div>
+                <div class="about_slider_item_2">
+                    <div class="about_cart_name_1">
+                        <h1 class="cart_name_1">Андрей искорнев</h1>
+                        <h2 class="cart_desc">Пластический хирург,<br> главный врач THE PLATINENTAL</h2>
+                        <button id="feed_btn" class="cart_btn" onclick="ff();">записаться на приём</button>
+                    </div>
+                </div>
+                <div class="about_slider_item_3">
+                    <div class="about_cart_name_1">
+                        <h1 class="cart_name_1">эльмира балтачеева</h1>
+                        <h2 class="cart_desc">Дерматолог, косметолог</h2>
+                        <button id="feed_btn" class="cart_btn" onclick="ff();">записаться на приём</button>
+                    </div>
+                </div>
+                <div class="about_slider_item_4">
+                    <div class="about_cart_name_1">
+                        <h1 class="cart_name_1">мхитар мелоян</h1>
+                        <h2 class="cart_desc">Пластический хирург</h2>
+                        <button id="feed_btn" class="cart_btn" onclick="ff();">записаться на приём</button>
+                    </div>
+                </div>
+                <div class="about_slider_item_1">
+                    <div class="about_cart_name_1">
+                        <h1 class="cart_name_1">АННА СМИРНОВА</h1>
+                        <h2 class="cart_desc">Дерматолог, косметолог</h2>
+                        <button id="feed_btn" class="cart_btn" onclick="ff();">записаться на приём</button>
+                    </div>
+                </div>
+                <div class="about_slider_item_2">
+                    <div class="about_cart_name_1">
+                        <h1 class="cart_name_1">Андрей искорнев</h1>
+                        <h2 class="cart_desc">Пластический хирург,<br> главный врач THE PLATINENTAL</h2>
+                        <button id="feed_btn" class="cart_btn" onclick="ff();">записаться на приём</button>
+                    </div>
+                </div>
+                <div class="about_slider_item_3">
+                    <div class="about_cart_name_1">
+                        <h1 class="cart_name_1">эльмира балтачеева</h1>
+                        <h2 class="cart_desc">Дерматолог, косметолог</h2>
+                        <button id="feed_btn" class="cart_btn" onclick="ff();">записаться на приём</button>
+                    </div>
+                </div>
+                <div class="about_slider_item_4">
+                    <div class="about_cart_name_1">
+                        <h1 class="cart_name_1">мхитар мелоян</h1>
+                        <h2 class="cart_desc">Пластический хирург</h2>
+                        <button id="feed_btn" class="cart_btn" onclick="ff();">записаться на приём</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="store_wrp slave">
+            <div class="store_wrapper">
+                <div class="store">
+                    <h1 class="store_tite">store</h1>
+                    <h2 class="store_txt">онлайн - магазин красоты</h2>
+                    <form class="store_form" action="#">
+                        <button class="index_btn">подробнее</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="service_wrp slave">
+            <div class="service_wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <path d="M42.1058 42.1053H42.1049H37.8946V37.8946V37.8941H42.1049H42.1058V42.1049V42.1053ZM50.5259 50.5259H46.3161V46.3156H50.5259V50.5259ZM75.7893 46.3156V52.6307C75.7893 57.7761 72.0762 62.0635 67.19 62.9722C66.1966 56.6063 61.1279 51.5922 54.7366 50.6783V46.3156H75.7893ZM55.0202 55.0202C58.9069 55.9271 61.9666 58.9868 62.8735 62.873C58.9873 61.9666 55.9276 58.9064 55.0202 55.0202ZM52.6312 75.7883V75.7888H46.3161V54.7366H50.6787C51.5927 61.1279 56.6063 66.1961 62.9727 67.1895C62.064 72.0757 57.7761 75.7883 52.6312 75.7883ZM33.6839 50.5263H29.4737V46.3156H33.6839V50.5263ZM33.6839 75.7888H27.3683C22.223 75.7888 17.9356 72.0757 17.0268 67.19C23.3932 66.1966 28.4069 61.1284 29.3217 54.7366H33.6839V75.7888ZM24.9793 55.0207C24.072 58.9073 21.0118 61.9671 17.1261 62.8739C18.0329 58.9873 21.0931 55.9275 24.9793 55.0207ZM4.21072 52.6312L4.21072 46.3156H25.2629V50.6787C18.8716 51.5926 13.8024 56.6068 12.8095 62.9727C7.92427 62.064 4.21072 57.7766 4.21072 52.6312ZM29.4737 29.4741H33.6839V33.6844H29.4737V29.4741ZM4.21072 33.6839L4.21072 27.3688C4.21072 22.2234 7.92427 17.9365 12.8095 17.0277C13.8029 23.3937 18.8716 28.4073 25.2629 29.3217V33.6839H4.21072ZM24.9793 24.9798C21.0931 24.0724 18.0329 21.0127 17.1261 17.1265C21.0118 18.0334 24.072 21.0931 24.9793 24.9798ZM27.3683 4.21117V4.21071H33.6839V25.2634H29.3217C28.4069 18.8716 23.3937 13.8038 17.0268 12.81C17.9356 7.92425 22.223 4.21117 27.3683 4.21117ZM46.3161 29.4736H50.5259V33.6844H46.3161V29.4736ZM46.3161 4.21071H52.6312C57.7761 4.21071 62.064 7.92426 62.9727 12.8095C56.6063 13.8029 51.5927 18.8711 50.6787 25.2629H46.3161V4.21071ZM55.0202 24.9793C55.9276 21.0931 58.9873 18.0329 62.8735 17.126C61.9666 21.0117 58.9069 24.0719 55.0202 24.9793ZM75.7893 27.3683V33.6839H54.7366V29.3217C61.1279 28.4069 66.1966 23.3937 67.19 17.0268C72.0762 17.9355 75.7893 22.2229 75.7893 27.3683ZM46.3161 37.8941H79.9991L80 27.3683C80 19.8979 74.4398 13.73 67.2333 12.7662C66.2695 5.5602 60.1016 -2.28882e-05 52.6317 -2.28882e-05L42.1058 0.000923157L42.1049 33.6839H37.8946V0.000923157L27.3683 -2.28882e-05V0.000457764C19.8979 0.000457764 13.7305 5.56066 12.7667 12.7667C5.56021 13.7305 0 19.8979 0 27.3683L0.000940735 37.8941L33.6839 37.8941V42.1053L0.000940735 42.1053L0 52.6312C0 60.1021 5.56021 66.2695 12.7667 67.2333C13.7305 74.4393 19.8979 79.9995 27.3683 79.9995L37.8946 79.9986L37.8946 46.3156H42.1049L42.1058 79.9986L52.6317 79.9995V79.999C60.1016 79.999 66.2695 74.4388 67.2333 67.2328C74.4398 66.269 80 60.1021 80 52.6312L79.9991 42.1053L46.3161 42.1049V37.8941Z" fill="white"/>
+                </svg>
+                <h1 class="service_title">услуги и цены</h1>
+                <p class="service_txt">Только наша клиника предлагает собственную методику гармонизации внешности, позволяющую творить совершенный образ исходя из уникального рисунка личности каждого человека: этнических особенностей его внешности и даже профессиональных задач.</p>
+                <form class="service_form" action="#">
+                    <button class="index_btn">подробнее</button>
+                </form>
+            </div>
+        </section>
+        <section class="news_wrp slave">
+            <div class="news_wrapper">
+                <div class="news">
+                    <h1 class="news_tite">Новости anti-age</h1>
+                    <h2 class="news_txt">все новости собраны в этом разделе</h2>
+                    <form class="news_form" action="#">
+                        <button class="index_btn">подробнее</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="platinental_wrp slave">
+            <div class="platinental_wrapper">
+                <h1 class="service_title">The Platinental</h1>
+                <p class="service_txt">The Platinental — новое слово в современной пластической хирургии. Это американский бренд, поэтому клиника имеет постоянный контакт с прогрессивным миром эстетической медицины США и перенимает новейшие методы работы именитых врачей Беверли Хиллз. Каждый пластический хирург клиники обладает узкой специализацией и компетентен выполнять операции любой сложности в рамках заданной области хирургии.</p>
+                <p class="service_txt">Только наша клиника предлагает собственную методику гармонизации внешности, позволяющую творить совершенный образ исходя из уникального рисунка личности каждого человека: этнических особенностей его внешности и даже профессиональных задач.</p>
+                <form class="service_form" action="#">
+                    <button class="index_btn">о нас</button>
+                </form>
+            </div>
+        </section>
+        <section class="contacts_wrp">
+            <div class="contacts_wrapper">
+                <div class="address">
+                    <div class="address_cart">
+                        <h1 class="address_title">Москва</h1>
+                        <a href="tel:+74959892116" class="address_number">+7 495 989-21-16</a>
+                        <p class="address_address">Лялин переулок дом 21, стр. 2</p>
+                        <p class="address_time">Время работы: <br> Ежедневно <br> 10:00—21:00</p>
+                        <a href="#" class="map_show">Посмотреть на карте</a>
+                    </div>
+                    <div class="address_cart">
+                        <h1 class="address_title">Казань</h1>
+                        <a href="tel:+78432366666" class="address_number">+7 (843) 236 6666</a>
+                        <p class="address_address">ул. Карла Маркса, 48 корпус 1 </p>
+                        <p class="address_time">Время работы: <br> Пн—Пт 10:00—21:00 <br> Сб 10:00—20:00 <br> Вс 10:00—18:00</p>
+                        <a href="#" class="map_show">Посмотреть на карте</a>
+                    </div>
+                    <form class="address_form" action="#">
+                        <button class="index_btn">связаться с нами</button>
+                    </form>
+                </div>
+                <div class="partners">
+                    <h1 class="partners_title">Партнеры</h1>
+                    <div class="partners_cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="50" viewBox="0 0 55 50" fill="none">
+                            <rect width="55" height="50" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0" transform="translate(0.0916667) scale(0.0123737 0.0136111)"/>
+                            </pattern>
+                            <image id="image0" width="66" height="72" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABICAYAAABCzyOOAAANcUlEQVR4Xt1ceZCcRRV/r49vZmf2zs4e2U0ComihIVFLywsspQJqopSFoEZELhU0gggGRE045FBRUSHREk+IooBRCQJqDHgUXoBaYimIYjK72Z1xZtnMzvV93f2snv1ma7LszvfN7Ca7Rf+zM9vXe79+/d7r168HiSgCAAnP83oQcRkitgFADAAIAIpElCeicSllCgDGAWASEW3dki1ExAGgAwCWKaV67GefL8urBwCWpwNCiDQA/A8AMqiUeg8RXYqIXRUACCQgcKAKEAYQFACULBiIOAoAjyPin7XWf5JS2s8WnEUtRMQAoF8ptZox9lIiWg0AR9kFBoB2IHAAQAAC8/nSgOBaQADgSc75+ai1/hgZcw0BoOUGEYFoasHtZ1uq3yv/m2LZNj8ACI8T0R4AuEcI8TAi2oEPWyGiXq31cQCwnohehYCrACFq6a3SXktM7f9reMxwY9b7QNA1gFUe6/NRC0oNMAcA8fcAsINzvgsRM4cKDSKya/FcY8xpAPA2MnQMADngL1oj8/rANAfEzIkOkhZEu/8eBoDtnPOdiJhrhLCgtkS00hhzFhGdAQRHEhDOtvJB41TrFxSImaI3JSVYBoTdRHS9EOK3iGjCEjdbOyKKaa1PRcSLydALK3t9AcohA6IWaV/HpBDxS4yxmxHx6WZoJ6KjtdZbgOgUQIw2M8ZcfQ4bEL50KEC4m3N+GSI+HpYRqwu01m9ExOvJ0OpwGizs6L7Gn1KqC6MjQk1tbQzDR4wxF0opfxPUh4ikMeYcIrqKiKwJnLZm89EJs+m3wwpEjan6NwBsEkLcW0dcI8aYj5ChywmodSEZX3QgZmjpvQBw3mxgEJFjjNnsg9ByKEGwNDWtI2Y6WkEiPocFsGL+JBGdWbtNrHdojPkQGbqWgKyLP6tTFKD4Dnb+AnyLhoGoAWAfERUR8AiyTkyDxFZXwf5ljD3CGNuIiP+035VSpwLAV4nIuvoNgTANjnWIEXKI+BQRrSKi9npSNR8gbuKcX6e1fiUAvBUA1gFRb/UEFlaUKwRMcbuTc36m53nPYYzdQUTPDTtGLagIaAjoXwDwEwC4WwgxbIy50xizdkGBqJn0RinlRf534XneGsbYewHgVCLqboQJfxUVEX0BEY8hovUN959a0icR8RbG2O0AsNeejK1UGWN2G2NefMiBqFGAQin1WkT8JBAc14TXZ91yZo/OYYGYkigsAsL3OOefqW6vGpoOPxA1k/cqpS5HwPcRUGiN36gC9vf1fgDYyjm/FRFLs5jFxQPC3y7WB/ggEW0hIhsMacawzNnHB+0JAPiQlPL+OhZkcYHwweDGmPPI0HWAYKNdC1J8SfgXEZ0rpXyw3qCLoiPm8BWEMeYyMrQFECTYQE+T0lGzdcYA4GwhxE+DkF0yQPiS0aq13gYE77ZRv2a3ia8Yy8jwo5zzLweB4M+9+FujllAiep4xZqcx5oXNAuGPdzvn/NywocAlJRFVQJRS5wDBNuuJNgqGrxf2GWNOdhzn0TDSsCQlwieqQ2t9FxGd0CgQfv/rpJSXhwVhyQJhCVNKbQSAb9rTZVgwfGnYyzm3wZm/PyuAsGF3Y8x9QS7vQcxOWZpbOOfvbzTmuSR1RJU5z/OuR8BLw4TcfGkoA8BpQgh7kGqoLHUgTkLEnQDQEsSV7zv8Uwhh9cpwUPuZ9UsaCCJaobXeQ0RHBekJXyLu4py/AxHtlWNDZakDEdVa/5iITgwConKhyPAKzvmVDSHgN17SQPjW4xtEdFYwEGQvsc4WjvjWsxUIG4p7XyggEM8QQtx2mIEw19jDwMwL3ioRNTfk0xGqZghUSlWACOqL9rYd8d1CiB1BbWerr90aQf1r7zUuIKKPB3Ww+QVEtE1K+ckQbWdt4nne1Yi4kYh0wBgGES8RQuxqZi4bC7HeLACsBYB6c9nFzwqijfbDMgDoDTGhjbJkENEeh5sqlkA/GydMf5uY8ozoU5iOfuLIKt9U18vusTxZq7R3YUNIYahcom2sRFgwREj6dKPubshxF7wZEVmewiy0TbJQ+L+JiZcXJycvM8bYRKs5CwIw5Py2FcuXN6XAFpzTOgPaBLnRVOpKz3XXkM0Dm6OgdVc4f6otHv8EptPpN+fz+duNMZVrtnqFEK866sgjtwa1W+x6m1iSHBm51yuXjw+ihTH2N4rF1mEqlXpToVD4gTEmHmTfkfOrj1i5ckvQ4ItdT0TxfcPD9ynXfU3QBQ9j4q/RZV3rMDk6eoJXKu0kY9qCgJBSfn5oaOjixWY0aP5sNtuRy+d/rj3vZUFAcCH+1NnRcRKOZjKvKE1O7jJa22TTOeewzpZ0nFuHBgffs9QTTtP5/EA+k3nAKHV0EE9cil+1RKLrrY54fr5Y/JlRamVQJynlnqGhoQ2IWAhalcWsH8tmjy3mcruN1jabuO7iCil/tGJo6DTM5XK92Wz2fq114M0xF+Lfba2tr+vu7rbJHku2jIyNvbVcLH6fjJF1gQAAx3G2DQ0OftD6EZFkMnmn53l2peuih4wVYi0tJ/f19f1iyaIAAMmRkU955fLH610sVbNwZTR2ydBA3+cqnO8bHv6sct1L6tvOqdsq4USvWjE4sGRNaIqotZRM7lKeZ2/ogxa2HI3HTxlIJO6ptBwZG3tXuVD4jvXRgzpzKR/qaGtb39nZuejJ6LNxOZbJvKqYy91jjOkM5IXzZEtn5+t7OzqeqAAxms2+qDSlXHqDOjPGitF4/O39icTdS3F7JIeHb/Bc9+LaBPTZ6LT1QohfrFix4i2IWJwCgijuJZM/8Tzv9fZ7EBjSce4aGhw8vdnT4aEC0FrAQrH4U63Uc4J4sPVONLp1cGDgqgrPVaKSo6Mf84rFa8MgyRjLRePxjf2JRFPxgkMBhD08JkdHr1el0uaQPEzEYrENvb29lQTYaSDS6fRL8/n8vcaYRJCHWRErKR/s6uw8ra2tzb7sWfSSSqWOKxSLdxit+4KkwRLLpdwTi0ZPTiQSlRcE00BUzOjw8A7PdU8JA4Q9jsuWlmsH+/q2LvbRPJfLJcYnJnYo110XknZyotELBgcGbqqu4EH2xXdEdpAxgTlQVioYY09Ho9Hz+vv7v79YImEXcHj//uu8cvlCPzIVqOO4lP9ob219Q1dX139nBSKTybTnC4U7lOcF3z34KbxCiL1OLHZ2f0/P7sMNhg2+jIyOXuSWy1eGXTwrMTIa3TI0MHB1Lb3P8DisVLjF4q1hjuV2ICsZXIgnopHIBw6nx2lv1odTqU2qWLzCGFPJ1QqzLYSUj7W1tm7o6up6qi4QRBRNJpPfUEq9M0j7VoGoKB/O94lIZPPyvr47EDEoSj0v4RkfH+8sFIuXuq57ARkTCwKgSiciejIWu3Cor2/7TAJm9UHT6fRLCqXSD7XnrQozyfREjE1Ix9km2tpu7D9E1mRsfHyNOzl5hdZ6gzFGhKLPXpwBgJRyVzweP727u3siFBC20fD+/ZvcUukG/4FsoNjVoK45578TkcgNA72991uvbV7L73eenJzsezqfP12Xy5u0UkeE2QrVeX0vcq+MxU4d6On5w2z0zHkqGSGKmZGRm13XPdOe4kIhX/NGlDGWZ0z8UkTkt1tbWh5ob29v+AmkTUtOTUysckulDcZ1zyBj1lgpmNb0IZ4hVABjrBCJRj+8vL//a3MtSt1wdzabXTmZz9+qPK8SBA0LRq3uQMZKTIjHGOJu5PzXDmP/sJdEPT09hZm6xD5hyuVy7YVCYblBXKu0PoGUOt5ovdJ/5twwDXYOGYl8cXBg4HJEtMkns5bAuH8qlVpbLJe/oz1vtf+0oCFJn75PRfvCFm2+ZJoxlrSHXmQsi/btOaJNSm9HogQBDBqtl9ts/yrzjS7C9EIgknSc77XF45uCTsuBQNhBx8bGXl1y3Vu0572gGaJqJeQgkzVDtGdeQjcigbX6oPLZgiDEjyORyPm9vb32TXvdEgqIaTDK5e1G69WNZtQHEbGQ9b7JN1zKO1sikYsSicRImPFDA+GDsabsul/SSh0fxscIQ8BCtqkmoUnH+Xp7W9vW9vZ2+5MIoUpDQNgRM5nMimK5fLXnuu8g/5qwGREORV3IRlUJZZynhIx+mg30fmV5g5H2hoGwtFnTiqOjZ7pKbTZK2Udk/rZsariQ7D6zWc28hnP+kOM4W/v6+n7ZzL3LvChPjY+vLRcKm7VSbzFax+spwqa5naVjLfDI2AgX4mtOR8f2vtbWpnM35gWEbw1axjKZE71i8Xyt9fHGmOk8yoXeMrWmmCGmuZQ/iki5PZFI/GW+MZF5A1FdsFQq1WqMOcFT6nSt1GuJqMfPvWh+2/hnhOocjDGFjP2HC3EPd5zv9i9b9mgzeZizSeeCAVEd3B6P0+n0MZ7nnai1XmeIXlR56E7E50pWm2vbVCQKscQYG+aM/RE4vy8Wiezp6ura14weqLc9FxyI2smIqCWbzR7peeZYV5WPBaLn2wxcP2/L6hT7GK5yl+KvbAkQJxlAGjl/Cjl/jDH2aITzx7q7u/cv1OofFomoh7o9Sxw4cKCtRNSJNrHMo9acW3C4ENTiOGUJYI/HB4jo6e7ubvszT/P6JZJGFPT/AVHiSXt8PjA+AAAAAElFTkSuQmCC"/>
+                            </defs>
+                        </svg>
+                        <p class="partners_txt">Российский Национальный Исследовательский Медицинский Университет им. Н.И. Пирогова</p>
+                    </div>
+                    <div class="partners_cart">
+                        <img src="./img/kafedra.svg" alt="kafedra">
+                        <p class="partners_txt">Официальный филиал Кафедры пластической и реконструктивной хирургии, косметологии и клеточных технологи</p>
+                    </div>
+                    <form class="partners_form" action="#">
+                        <button class="index_btn">подробнее</button>
+                    </form>
+                </div>
+                <div class="members">
+                    <h1 class="members_title">Членство</h1>
+                    <h2 class="members_txt">в международных организациях</h2>
+                    <div class="members_items_wrp">
+                        <div class="members_items">
+                            <img src="./img/members_1.png" alt="" class="members_logo" width="112" height="83">
+                            <img src="./img/members_3.png" alt="" class="members_logo" width="83" height="83">
+                        </div>
+                        <div class="members_items">
+                            <img src="./img/members_2.png" alt="" class="members_logo" width="85" height="83">
+                            <img src="./img/members_4.png" alt="" class="members_logo" width="168" height="82">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="map" class="map"></div>
+    <footer>
+        <section class="footer_wrp">
+            <div class="footer_wrapper">
+                <div class="footet_logo">
+                    <a href="" class="footer_logo_link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="261" height="55" viewBox="0 0 261 55" fill="none">
+                            <path d="M29.3582 28.9476H29.3575H26.4219V26.0527V26.0524H29.3575H29.3582V28.9473V28.9476ZM35.229 34.7367H32.2938V31.8422H35.229V34.7367ZM52.8438 31.8422V36.1839C52.8438 39.7213 50.2549 42.6689 46.848 43.2937C46.1554 38.9171 42.6213 35.4698 38.1649 34.8415V31.8422L52.8438 31.8422ZM38.3627 37.8266C41.0726 38.4501 43.206 40.5537 43.8383 43.2254C41.1287 42.6023 38.9953 40.4984 38.3627 37.8266ZM36.697 52.1048V52.1051H32.2938V37.6316H35.3356C35.9728 42.0257 39.4686 45.5101 43.9075 46.1931C43.2739 49.5524 40.2842 52.1048 36.697 52.1048ZM23.486 34.7371H20.5504V31.8422H23.486V34.7371ZM23.486 52.1051H19.0825C15.4949 52.1051 12.5055 49.5524 11.8719 46.1934C16.3109 45.5104 19.8066 42.026 20.4445 37.6316H23.486L23.486 52.1051ZM17.4167 37.827C16.7841 40.499 14.6504 42.6026 11.9411 43.2261C12.5734 40.554 14.7071 38.4504 17.4167 37.827ZM2.93591 36.1842L2.93591 31.8422L17.6145 31.8422V34.8418C13.1582 35.4702 9.62371 38.9174 8.93139 43.294C5.52517 42.6692 2.93591 39.7216 2.93591 36.1842ZM20.5504 20.2636H23.486V23.1581H20.5504V20.2636ZM2.93591 23.1578L2.93591 18.8161C2.93591 15.2787 5.52517 12.3314 8.93139 11.7066C9.62404 16.0833 13.1582 19.5302 17.6145 20.1588V23.1578L2.93591 23.1578ZM17.4167 17.1737C14.7071 16.5499 12.5734 14.4463 11.9411 11.7746C14.6504 12.398 16.7841 14.5016 17.4167 17.1737ZM19.0825 2.89521V2.89489H23.486L23.486 17.3687H20.4445C19.8066 12.9743 16.3112 9.49021 11.8719 8.80691C12.5055 5.44797 15.4949 2.89521 19.0825 2.89521ZM32.2938 20.2633H35.229V23.1581H32.2938V20.2633ZM32.2938 2.89489H36.697C40.2842 2.89489 43.2739 5.44797 43.9075 8.80658C39.4686 9.48956 35.9728 12.974 35.3356 17.3684H32.2938V2.89489ZM38.3627 17.1734C38.9953 14.5016 41.1287 12.3977 43.8383 11.7742C43.206 14.4457 41.0726 16.5496 38.3627 17.1734ZM52.8438 18.8158V23.1578L38.1649 23.1578V20.1588C42.6213 19.5298 46.1554 16.0833 46.848 11.706C50.2549 12.3308 52.8438 15.2784 52.8438 18.8158ZM32.2938 26.0524L55.7791 26.0524L55.7798 18.8158C55.7798 13.6799 51.9029 9.43944 46.8782 8.77684C46.2062 3.82267 41.9057 0 36.6973 0L29.3582 0.000648499L29.3575 23.1578H26.4219L26.4219 0.000648499L19.0825 0V0.000328064C13.8738 0.000328064 9.57354 3.82299 8.90154 8.77716C3.87684 9.43976 0 13.6799 0 18.8158L0.000655925 26.0524L23.486 26.0524V28.9476L0.000655925 28.9476L0 36.1842C0 41.3204 3.87684 45.5606 8.90154 46.2232C9.57354 51.1773 13.8738 55 19.0825 55L26.4219 54.9994L26.4219 31.8422H29.3575L29.3582 54.9994L36.6973 55V54.9997C41.9057 54.9997 46.2062 51.177 46.8782 46.2228C51.9029 45.5602 55.7798 41.3204 55.7798 36.1842L55.7791 28.9476L32.2938 28.9473L32.2938 26.0524Z" fill="#1D1A15"/>
+                            <path d="M145.253 39.3418H148.415V15.6427H145.253V39.3418Z" fill="#1D1A15"/>
+                            <path d="M158.657 36.333C155.743 36.333 153.371 33.9948 153.371 31.1214C153.371 28.2474 155.743 25.9092 158.657 25.9092C161.572 25.9092 163.942 28.2474 163.942 31.1214C163.942 33.9948 161.572 36.333 158.657 36.333ZM163.943 22.702V24.5118C162.488 23.3797 160.653 22.702 158.657 22.702C153.941 22.702 150.118 26.4715 150.118 31.1214C150.118 35.7712 153.941 39.5408 158.657 39.5408C160.653 39.5408 162.488 38.863 163.943 37.731V39.5408H167.196V22.702L163.943 22.702Z" fill="#1D1A15"/>
+                            <path d="M178.143 39.3418H181.621V22.8148H178.143V39.3418Z" fill="#1D1A15"/>
+                            <path d="M178.143 21.2556H181.621V17.8255H178.143V21.2556Z" fill="#1D1A15"/>
+                            <path d="M176.999 22.4937H174.532V17.7127H171.244V22.4937H168.777V25.6812H171.244V39.229H174.532V25.6812H176.999V22.4937Z" fill="#1D1A15"/>
+                            <path d="M257.837 39.3418H261V15.6427H257.837V39.3418Z" fill="#1D1A15"/>
+                            <path d="M247.048 36.333C244.188 36.333 241.861 33.9948 241.861 31.1214C241.861 28.2474 244.188 25.9092 247.048 25.9092C249.908 25.9092 252.236 28.2474 252.236 31.1214C252.236 33.9948 249.908 36.333 247.048 36.333ZM252.236 22.702V24.5118C250.809 23.3797 249.007 22.702 247.048 22.702C242.42 22.702 238.668 26.4715 238.668 31.1214C238.668 35.7712 242.42 39.5408 247.048 39.5408C249.007 39.5408 250.809 38.863 252.236 37.731V39.5408H255.429V22.702L252.236 22.702Z" fill="#1D1A15"/>
+                            <path d="M238.668 22.4937H236.201V17.7127H232.912V22.4937H230.445V25.6812H232.912V39.229H236.201V25.6812H238.668V22.4937Z" fill="#1D1A15"/>
+                            <path d="M196.607 28.9976C196.607 25.5206 193.775 22.702 190.281 22.702C189.129 22.702 188.049 23.0102 187.119 23.5466V22.702H183.957V39.229H187.119V28.9971C187.12 27.2619 188.538 25.8498 190.281 25.8498C192.025 25.8498 193.444 27.2619 193.444 28.9976H193.444V39.229H196.607V28.9982L196.606 28.9976H196.607Z" fill="#1D1A15"/>
+                            <path d="M229.497 28.9976C229.497 25.5206 226.665 22.702 223.172 22.702C222.019 22.702 220.94 23.0102 220.009 23.5466V22.702H216.847V39.229H220.009V28.9971C220.009 27.2619 221.428 25.8498 223.172 25.8498C224.916 25.8498 226.334 27.2619 226.334 28.9976V39.229H229.497V28.9982L229.496 28.9976H229.497Z" fill="#1D1A15"/>
+                            <path d="M108.025 29.3913C108.7 27.3391 110.656 25.8498 112.959 25.8498C115.263 25.8498 117.217 27.3391 117.892 29.3913H108.025ZM121.186 32.5391C121.285 32.0294 121.339 31.5041 121.339 30.9655C121.339 26.4018 117.587 22.702 112.959 22.702C108.33 22.702 104.578 26.4018 104.578 30.9655C104.578 35.5293 108.33 39.229 112.959 39.229C116.456 39.229 119.452 37.1151 120.708 34.1133H117.04C116.089 35.3083 114.615 36.0806 112.959 36.0806C110.656 36.0806 108.7 34.5914 108.025 32.5391H121.186Z" fill="#1D1A15"/>
+                            <path d="M201.951 29.3913C202.626 27.3391 204.581 25.8498 206.885 25.8498C209.188 25.8498 211.144 27.3391 211.818 29.3913H201.951ZM215.112 32.5391C215.211 32.0294 215.265 31.5041 215.265 30.9655C215.265 26.4018 211.513 22.702 206.885 22.702C202.256 22.702 198.504 26.4018 198.504 30.9655C198.504 35.5293 202.256 39.229 206.885 39.229C210.383 39.229 213.378 37.1151 214.634 34.1133H210.966C210.015 35.3083 208.541 36.0806 206.885 36.0806C204.581 36.0806 202.626 34.5914 201.951 32.5391H215.112Z" fill="#1D1A15"/>
+                            <path d="M102.997 28.959C102.997 25.4688 100.106 22.6397 96.5386 22.6397C95.3624 22.6397 94.2597 22.949 93.3097 23.4874V15.5299L72.3209 15.5299V18.6902H80.3934V39.229H83.6224V18.6902L90.0802 18.6902V39.229H93.3097V28.9585C93.3097 27.2167 94.7587 25.7993 96.5386 25.7993C98.3191 25.7993 99.7675 27.2167 99.7675 28.959V39.229L102.997 39.229V28.9596L102.996 28.959H102.997Z" fill="#1D1A15"/>
+                            <path d="M135.307 28.959H132.478V18.6902H135.313C138.207 18.693 140.56 20.9949 140.56 23.8246C140.56 26.6555 138.204 28.959 135.307 28.959ZM135.307 15.5299H129.246V39.229H132.478V32.1193H135.307C139.994 32.1193 143.793 28.4056 143.793 23.8246C143.793 19.2436 139.994 15.5299 135.307 15.5299Z" fill="#1D1A15"/>
+                        </svg>
+                    </a>
+                    <a href="tel:+74959892116" class="footer_logo_link_phone">
+                        Служба поддержки <br> +7 495 989-21-16 
+                    </a>
+                </div>
+                <div class="footer_nav">
+                    <a href="#" class="footer_nav_link">о нас</a>
+                    <a href="#" class="footer_nav_link">врачи</a>
+                    <a href="#" class="footer_nav_link">услуги и цены</a>
+                    <a href="#" class="footer_nav_link">контакты</a>
+                </div>
+                <div class="footer_button">
+                    <form class="footer_button_form" action="#">
+                        <button class="footer_btn">наш store 
+                            <svg class="footer_btn_svg" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.87955 0.952381C6.97672 0.952381 5.43417 2.49493 5.43417 4.39776V4.48179H12.3249V4.39776C12.3249 2.49493 10.7824 0.952381 8.87955 0.952381ZM13.2773 4.48179V4.39776C13.2773 1.96894 11.3084 0 8.87955 0C6.45074 0 4.48179 1.96894 4.48179 4.39776V4.48179H0V20H17.7591V4.48179H13.2773ZM12.3249 5.43417V8.87955H13.2773V5.43417H16.8067V19.0476H0.952381V5.43417H4.48179V8.87955H5.43417V5.43417H12.3249Z" fill="#1D1A15"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <form class="footer_button_form" id="scroll" action="#">
+                        <button class="footer_btn_up">наверх 
+                            <svg class="footer_btn_up_svg" xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+                                <path d="M3.5 15C3.5 15.2761 3.72386 15.5 4 15.5C4.27614 15.5 4.5 15.2761 4.5 15H3.5ZM4.35355 0.646447C4.15829 0.451184 3.84171 0.451184 3.64645 0.646447L0.464466 3.82843C0.269204 4.02369 0.269204 4.34027 0.464466 4.53553C0.659728 4.7308 0.976311 4.7308 1.17157 4.53553L4 1.70711L6.82843 4.53553C7.02369 4.7308 7.34027 4.7308 7.53553 4.53553C7.7308 4.34027 7.7308 4.02369 7.53553 3.82843L4.35355 0.646447ZM4.5 15V1H3.5V15H4.5Z" fill="#1D1A15"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer_black_wrp">
+            <div class="footer_black_wrapper">
+                <div class="footer_social_search">
+                    <input class="footer_search" type="text">
+                    <a href="#" class="footer_social_icon">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                        <path d="M23.5317 29.979L18.6078 29.8922C17.0136 29.862 15.4154 29.9224 13.8524 29.6091C11.4748 29.1409 11.3063 26.8456 11.1301 24.9203C10.8872 22.2135 10.9812 19.4576 11.4395 16.7735C11.6983 15.2674 12.7165 14.3686 14.2911 14.2709C19.6067 13.9159 24.9576 13.958 30.2614 14.1236C30.8216 14.1388 31.3856 14.2217 31.9379 14.3162C34.6643 14.7768 34.7308 17.3778 34.9076 19.5675C35.0838 21.7797 35.0094 24.0033 34.6725 26.2005C34.4022 28.0196 33.8851 29.5452 31.7028 29.6925C28.9686 29.8851 26.2971 30.0401 23.5552 29.9907C23.5553 29.979 23.5395 29.979 23.5317 29.979ZM20.6369 25.3734C22.6974 24.2332 24.7186 23.112 26.7673 21.9795C24.703 20.8393 22.6857 19.7181 20.6369 18.5856V25.3734Z" stroke="#FEF9F3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="0.5" y="0.5" width="44" height="44" stroke="#FEF9F3"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer_social_icon">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                        <path d="M13 28V17C13 14.7909 14.7909 13 17 13H28C30.2091 13 32 14.7909 32 17V28C32 30.2091 30.2091 32 28 32H17C14.7909 32 13 30.2091 13 28Z" stroke="#FEF9F3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M28.5 16C29.0523 16 29.5 16.4477 29.5 17C29.5 17.5523 29.0523 18 28.5 18C27.9477 18 27.5 17.5523 27.5 17C27.5 16.4477 27.9477 16 28.5 16Z" stroke="#FEF9F3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 22.5C18 24.9853 20.0147 27 22.5 27C24.9853 27 27 24.9853 27 22.5C27 20.0147 24.9853 18 22.5 18C20.0147 18 18 20.0147 18 22.5Z" stroke="#FEF9F3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="0.5" y="0.5" width="44" height="44" stroke="#FEF9F3"/>
+                    </svg>
+                    </a>
+                    <a href="#" class="footer_social_icon">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                        <rect x="0.5" y="0.5" width="44" height="44" stroke="#FEF9F3"/>
+                        <path d="M18.7765 17.1391L19.2265 16.5174C19.6826 15.8873 20.4907 15.6197 21.2327 15.8531C21.298 15.8737 21.3461 15.9293 21.3569 15.9969L21.7687 18.5671C21.811 18.831 21.6796 19.0925 21.4425 19.2161C20.9041 19.4968 20.6475 20.1257 20.8359 20.703L21.3085 22.151C21.4041 22.4438 21.5521 22.7168 21.7453 22.9567L22.3987 23.768C22.7787 24.2398 23.4389 24.3779 23.9761 24.0978C24.2187 23.9713 24.5149 24.0142 24.7116 24.2043L26.5757 26.0062C26.6249 26.0538 26.643 26.1251 26.6225 26.1904C26.389 26.9324 25.707 27.4418 24.9293 27.455L24.1349 27.4684C23.3328 27.482 22.5606 27.1639 22.001 26.5891L21.3119 25.8813C19.9554 24.4882 19.017 22.7425 18.6034 20.8426L18.2967 19.434C18.1229 18.6356 18.2974 17.801 18.7765 17.1391Z" stroke="#FEF9F3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.9383 27.1698L14.4082 27.3406C14.4599 27.1984 14.4444 27.0404 14.366 26.9109L13.9383 27.1698ZM12 32.5L11.5301 32.3291C11.4637 32.5117 11.5091 32.7162 11.6464 32.8536C11.7838 32.9909 11.9883 33.0363 12.1709 32.9699L12 32.5ZM17.3302 30.5617L17.5891 30.134C17.4596 30.0556 17.3016 30.0401 17.1594 30.0918L17.3302 30.5617ZM32 22C32 27.2467 27.7467 31.5 22.5 31.5V32.5C28.299 32.5 33 27.799 33 22H32ZM22.5 12.5C27.7467 12.5 32 16.7533 32 22H33C33 16.201 28.299 11.5 22.5 11.5V12.5ZM13 22C13 16.7533 17.2533 12.5 22.5 12.5V11.5C16.701 11.5 12 16.201 12 22H13ZM14.366 26.9109C13.4991 25.4782 13 23.7982 13 22H12C12 23.9857 12.5517 25.8442 13.5105 27.4286L14.366 26.9109ZM12.4699 32.6709L14.4082 27.3406L13.4684 26.9989L11.5301 32.3291L12.4699 32.6709ZM17.1594 30.0918L11.8291 32.0301L12.1709 32.9699L17.5011 31.0316L17.1594 30.0918ZM22.5 31.5C20.7018 31.5 19.0218 31.0009 17.5891 30.134L17.0714 30.9895C18.6558 31.9483 20.5143 32.5 22.5 32.5V31.5Z" fill="#FEF9F3"/>
+                    </svg>
+                    </a>
+                </div>
+                <a href="#">
+                    <img src="./img/footer_logo_rubic.png" alt="#">
+                </a>
+            </div>
+        </section>
+    </footer>
+    
+    <div id="myModal" class="modal_overlay">
+        <div id="feedback" class="modal">
+            <form id="TestForm" class="modal_wrp">
+                <div class="close"></div>
+                <h1 class="modal_title">чем можем вам помочь?</h1>
+                <h3 class="modal_txt">Заполните заявку и мы свяжемся с Вами в ближайшее время</h3>
+                <input type="text" class="modal_phone" placeholder="+7(___)___-__-__">
+                <input type="text" class="modal_name" autofocus placeholder="ваше фио">
+                <input type="submit" class="modal_btn">
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="./js/jquery.inputmask.min.js"></script>
+
+
+        <!-- Карта -->
+    <script>
+            if ( $('#map').length ) {
+                ymaps.ready(function() {
+                    var map = new ymaps.Map("map", {center: [55.757480, 37.653730], zoom: 17, controls: [], type: "yandex#map"});
+                    map.geoObjects.add(new ymaps.Placemark([55.757480, 37.653730], {}, {iconColor: '#FF6820'}));
+                });
+            }
+    </script>
+
+
+        <!-- Модальное окно -->
+    <script>
+        let modal = document.getElementById('myModal');
+        let btn = document.getElementById('feed_btn');
+        let span = document.getElementsByClassName('close')[0];
+
+        btn.onclick = function () {
+            modal.style.display = "flex";
+        };
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        modal.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+
+        <!-- Паралакс -->
+    <script>
+
+        $(window).on('scroll load resize', function() {
+
+        slavemaster('.slave');
+
+        })
+
+        function slavemaster(slave_ = '.slave') {
+        $(slave_).each(function() {
+        let slave = $(this)
+        slave.css('background-size', '1920px auto')
+        let offset = parseInt(slave.attr('data-offset'))
+        if (isNaN(offset))
+        offset = 0
+        let vpTop = $(document).scrollTop()
+        let vpHeight = $(window).height()
+        let vpBot = vpTop + vpHeight
+
+        let slaveTop = slave.offset().top
+        let slaveHeight = slave.height()
+        let slaveBot = slaveTop + slaveHeight
+
+
+        // до показа на экране
+        if (vpBot <= slaveTop)
+        slave.css('background-position', 'center ' + offset + '%')
+
+        // в поле зрения
+        let q = (vpBot - slaveTop) / (slaveHeight + vpHeight)
+        if ((vpBot > slaveTop) && (vpTop < slaveBot))
+        slave.css('background-position', 'center ' + (offset - 0 + Math.round(q * 100)) + '%')
+
+        //после показа на экране
+        if (vpTop >= slaveBot)
+        slave.css('background-position', 'center ' + (offset - 0 + 100) + '%')
+
+        });
+        }
+
+    </script>
+
+
+        <!-- Слайдер -->
+    <script type="text/javascript">
+                
+        $(document).ready(function(){
+            $('.about_wrapper').slick( {
+                infinite: true,
+                slidesToShow: 4,
+                arrows: true,
+                centerMode: true,
+                centerPadding: '0px',
+            });
+        });
+
+    </script>
+
+
+        <!-- Возврат в начало -->
+    <script>
+         $('#scroll').click(function(){
+            $('html, body').animate({scrollTop:0}, 'slow');
+            });
+    </script>
+
+
+        <!-- Маска на телефон -->
+    <script type="text/javascript">
+
+        // вешаем маску на телефон
+        $('.modal_phone').inputmask("+7(999)999-99-99");
+        
+        // добавляем правило для валидации телефона
+        jQuery.validator.addMethod("checkMaskPhone", function(value, element) {
+            return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value); 
+        });
+        
+        // получаем нашу форму по class
+        // var form = $('.form-request');
+        
+        // включаем валидацию в форме
+        form.validate();
+        
+        // вешаем валидацию на поле с телефоном по классу
+        $.validator.addClassRules({
+            'modal_phone': {
+                checkMaskPhone: true,
+            }
+        });
+
+    </script>
+
+
+        <!-- Бургер -->
+    <script>
+        $(document).ready(function() {
+            $('.menu-burger__header').click(function() {
+                $('.menu-burger__header').toggleClass('open-menu');
+                $('.header_navigation').toggleClass('open-menu');
+            });
+        });
+    </script>
+
+    <script>
+        function ff() { $('#myModal').toggle(); }
+    </script>
+</body>
+</html>
